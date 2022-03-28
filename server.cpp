@@ -106,6 +106,10 @@ void	do_select()
 	{
 		if (FD_ISSET(i, &server.var.select.read_fds) && i == server.socket)
 			new_connection();
+		else
+		{
+		
+		}
 	}
 }
 int	main(int argc, char **argv)
